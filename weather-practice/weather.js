@@ -36,11 +36,7 @@ async function getWeather(city) {
             weather_img.src = "./assets/404.png"
             break;
     }
-}
-
-city.innerHTML = '';
-
-
+}S
 searchBtn.addEventListener('click', () => {
     if (city.value.trim() === "") {
         alert('Please enter a valid city name!');

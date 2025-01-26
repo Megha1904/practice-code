@@ -1,0 +1,125 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #212121;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container Styles */
+.container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    text-align: center;
+}
+
+/* Title Style */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Task Container */
+.task-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.task-container input {
+    width: 75%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.task-container button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.task-container button:hover {
+    background-color: #45a049;
+}
+
+/* Task List */
+.container-box {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#task-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#task-list li {
+    background-color: #fafafa;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Checkbox Styling */
+#task-list li input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #4CAF50; /* Green color for the checkbox */
+}
+
+/* Task text styling */
+#task-list li span {
+    font-size: 16px;
+    color: #333;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* When task is completed, style the text */
+#task-list li span.completed {
+    color: #4CAF50;
+    text-decoration: line-through;
+}
+
+/* Button Styling */
+#task-list li button {
+    margin-left: 5px; /* Reduced space between buttons */
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#task-list li button:hover {
+    opacity: 0.7;
+}
+
+#task-list li button.edit-btn {
+    background-color: #ff9800;
+    color: white;
+}
+
+#task-list li button.delete-btn {
+    background-color: #f44336;
+    color: white;
+}
